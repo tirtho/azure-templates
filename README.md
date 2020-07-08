@@ -3,8 +3,8 @@ Azure ARM Templates for creating specific Azure Resources
 
 ## Table of Contents ##
 - [azure-templates](#azure-templates)
-  * [Data Science Virtual Machine with Custom Script Extension](#DSVM)
-  * [Cognitive Services](#Cognitive Services)
+  * [Data Science Virtual Machine with Custom Script Extension](#data-science-virtual-machine-with-custom-script-extension)
+  * [Cognitive Services](#cognitive-services)
   * [TODOs](#todos)
   * [License](#license)
 
