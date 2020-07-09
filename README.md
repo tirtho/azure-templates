@@ -11,9 +11,9 @@ Azure ARM Templates for creating specific Azure Resources
 
 ## Data Science Virtual Machine with Custom Script Extension ##
 
-template-dsvm-with-custom-script.json
+[template-dsvm-with-custom-script.json]
 
-This creates a Windows 2019 DSVM and installs and configures IIS Webserver to run in it, via Custom Script Extension. In this case, the custom script is a PowerShell script installWebServer.ps1.
+This creates a Windows 2019 DSVM and installs and configures IIS Webserver to run in it, via Custom Script Extension. In this case, the custom script is a PowerShell script [installWebServer.ps1].
 
 Steps with an example - 
 
