@@ -32,7 +32,7 @@ Steps to deploy is below. Running the deployment script below will ask you for y
 > az group create --name TRPythonFunc --location eastus
 > az deployment group create --resource-group TRPythonFunc --template-file template-azure-python-function.json
 ```
-Note: You can put your subscription id in a parameters.json file as below. Then in the 'az deployment command above, pass --parameters parameters.json.
+Note: You can put your subscription id in a parameters.json file as below. Then in the 'az deployment..` command above, pass --parameters parameters.json.
 
 ```
 {
