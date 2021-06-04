@@ -26,11 +26,24 @@ Steps with an example -
 
 This creates a Linux Python Function App. 
 
-Steps to deploy - 
+Steps to deploy is below. Running the deployment script below will ask you for your Azure Subscription id. 
 
 ```sh
 > az group create --name TRPythonFunc --location eastus
 > az deployment group create --resource-group TRPythonFunc --template-file template-azure-python-function.json
+```
+Note: You can put your subscription id in a parameters.json file as below. Then in the 'az deployment command above, pass --parameters parameters.json.
+
+```
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "<your subscription id>"
+        }
+    }
+}
 ```
 
 ## TODOs ##
