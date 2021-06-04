@@ -24,7 +24,9 @@ Steps with an example -
 
 [template-azure-python-function.json]
 
-This creates a Linux Python Function App. Steps to deploy - 
+This creates a Linux Python Function App. 
+
+Steps to deploy - 
 
 ```sh
 > az group create --name TRPythonFunc --location eastus
