@@ -4,7 +4,7 @@ Azure ARM Templates for creating specific Azure Resources
 ## Table of Contents ##
 - [Azure Templates Project](#azure-templates)
   * [Data Science Virtual Machine with Custom Script Extension](#data-science-virtual-machine-with-custom-script-extension)
-  * [Cognitive Services](#cognitive-services)
+  * [Azure Function App (python)](#azure-python-function-app)
   * [TODOs](#todos)
 
 ## Data Science Virtual Machine with Custom Script Extension ##
@@ -20,8 +20,16 @@ Steps with an example -
 > az deployment group create --name TRArmDSVM --resource-group TRArmDSVM --template-file template-dsmv-with-custom-script.json
 ```
 
-## Cognitive Services ##
-...coming soon...
+## Azure Python Function App ##
+
+[template-azure-python-function.json]
+
+This creates a Linux Python Function App. Steps to deploy - 
+
+```sh
+> az group create --name TRPythonFunc --location eastus
+> az deployment group create --resource-group TRPythonFunc --template-file template-azure-python-function.json
+```
 
 ## TODOs ##
 more templates
@@ -31,5 +39,6 @@ more templates
 [hashiLib]: <https://github.com/BetterCloud/vault-java-driver>
 [MITL]: <https://en.wikipedia.org/wiki/MIT_License>
 
+[template-azure-python-function.json]: <https://github.com/tirtho/azure-templates/blob/master/template-azure-python-function.json>
 [template-dsvm-with-custom-script.json]: <https://github.com/tirtho/azure-templates/blob/master/template-dsmv-with-custom-script.json>
 [installWebServer.ps1]: <https://github.com/tirtho/azure-templates/blob/master/installWebServer.ps1>
